@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "antibiotics11\\stream\\": "src/"
+            "antibiotics11\\Stream\\": "src/"
         }
     },
     "authors": [
