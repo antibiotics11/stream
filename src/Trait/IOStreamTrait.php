@@ -1,6 +1,7 @@
 <?php
 
-namespace antibiotics11\Stream;
+namespace antibiotics11\Stream\Trait;
+use antibiotics11\Stream\Stream;
 
 trait IOStreamTrait {
 

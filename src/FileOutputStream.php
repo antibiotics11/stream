@@ -1,6 +1,7 @@
 <?php
 
 namespace antibiotics11\Stream;
+use antibiotics11\Stream\Trait\FileIOStreamTrait;
 use antibiotics11\Stream\Exception\FileNotFoundException;
 use Throwable;
 use function file_exists, is_file, is_writable;

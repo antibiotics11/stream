@@ -1,6 +1,7 @@
 <?php
 
 namespace antibiotics11\Stream;
+use antibiotics11\Stream\Trait\IOStreamTrait;
 use antibiotics11\Stream\Exception\IOException;
 use function substr;
 
