@@ -3,11 +3,10 @@
 namespace antibiotics11\Stream;
 use antibiotics11\Stream\Exception\IOException;
 use function sprintf;
+use const STDOUT;
 use const PHP_EOL;
 
-final class StandardOutputStream extends FileOutputStream {
-
-  public const string STDOUT = "php://stdout";
+final class StandardOutputStream extends OutputStream {
 
   private static self $stdout;
 
@@ -46,10 +45,10 @@ final class StandardOutputStream extends FileOutputStream {
   }
 
   private function __construct() {
-    parent::__construct(self::STDOUT, true);
+    parent::__construct(new Stream(STDOUT, Stream::MODE_WRITE_ONLY));
   }
 
-  private function __clone() {}
+  private function __clone(): void {}
 
 
 }
