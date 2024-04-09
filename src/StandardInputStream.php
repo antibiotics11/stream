@@ -2,8 +2,10 @@
 
 namespace antibiotics11\Stream;
 use antibiotics11\Stream\Exception\IOException;
+use JetBrains\PhpStorm\Deprecated;
 use const STDIN;
 
+#[Deprecated]
 final class StandardInputStream extends InputStream {
 
   public const string STDIN = "php://stdin";

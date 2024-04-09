@@ -2,10 +2,12 @@
 
 namespace antibiotics11\Stream;
 use antibiotics11\Stream\Exception\IOException;
+use JetBrains\PhpStorm\Deprecated;
 use function sprintf;
 use const STDOUT;
 use const PHP_EOL;
 
+#[Deprecated]
 final class StandardOutputStream extends OutputStream {
 
   private static self $stdout;
