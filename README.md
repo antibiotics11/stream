@@ -31,7 +31,7 @@ $helloWorldFile->close();
 ## Notice
 
 - <b>This project is experimental and does not guarantee the same functionality as java.io.</b>
-- <b>It mimics method overloading using optional arguments, but some features may be unstable.</b>
+- <b>Some features may be unstable due to mimicking method overloading with optional parameters.</b>
 
 ## Requirements
 
