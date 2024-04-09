@@ -1,6 +1,6 @@
 {
     "name": "antibiotics11/stream",
-    "description": "Stream classes for my personal projects.",
+    "description": "IO Stream classes mimicking java.io ",
     "type": "library",
     "license": "MIT",
     "autoload": {
