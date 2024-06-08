@@ -17,9 +17,8 @@ class FileOutputStream extends OutputStream { use FileIOStreamTrait;
    * @throws FileNotFoundException
    */
   public function __construct(string $name, bool $append = true) {
-
     if (file_exists($name)) {
-      is_file($name) or throw new FileNotFoundException($name . " is not a file.");
+      #is_file($name) or throw new FileNotFoundException($name . " is not a file.");
       is_writable($name) or throw new FileNotFoundException($name . " is not writable.");
     }
 
@@ -30,7 +29,6 @@ class FileOutputStream extends OutputStream { use FileIOStreamTrait;
     } catch (Throwable $e) {
       throw new FileNotFoundException("Failed to open file: " . $e->getMessage());
     }
-
   }
 
 }
