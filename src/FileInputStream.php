@@ -16,8 +16,7 @@ class FileInputStream extends InputStream { use FileIOStreamTrait;
    * @throws FileNotFoundException
    */
   public function __construct(string $name) {
-
-    is_file($name) or throw new FileNotFoundException($name . " is not a file.");
+    #is_file($name) or throw new FileNotFoundException($name . " is not a file.");
     is_readable($name) or throw new FileNotFoundException($name . " is not readable.");
 
     try {
@@ -27,7 +26,6 @@ class FileInputStream extends InputStream { use FileIOStreamTrait;
     } catch (Throwable $e) {
       throw new FileNotFoundException("Failed to open file: " . $e->getMessage());
     }
-
   }
 
 }
